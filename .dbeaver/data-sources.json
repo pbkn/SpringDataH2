@@ -1,0 +1,43 @@
+{
+	"folders": {},
+	"connections": {
+		"h2_embedded-181b13855e7-4508790d30f8934e": {
+			"provider": "h2",
+			"driver": "h2_embedded",
+			"name": "h2db",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "mem:h2db",
+				"url": "jdbc:h2:mem:h2db",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"h2_embedded-181b30ded0a-3c31ed749097805": {
+			"provider": "h2",
+			"driver": "h2_embedded",
+			"name": "h2db 2",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "mem:h2db",
+				"url": "jdbc:h2:mem:h2db",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
